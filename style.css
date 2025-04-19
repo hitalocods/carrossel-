@@ -88,3 +88,47 @@
 .item.active .title{
     animation: toActive 0.5s ease-in-out 1;
 }
+
+@media (max-width: 768px) {
+    .item .title {
+        font-size: 2.5rem;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .item .fruit {
+        width: 90%;
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .item .refri {
+        width: 180px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #prev,
+    #next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        bottom: 20px;
+        top: auto;
+    }
+
+    #prev {
+        left: 10px;
+    }
+
+    #next {
+        right: 10px;
+    }
+}
